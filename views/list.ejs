@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="courseListApp">
+<head>
+    <meta charset="UTF-8">
+    <title>课程列表页</title>
+    <% include public.styles.ejs %>
+</head>
+<body ng-controller="courseListCtrl">
+
+<div class="container">
+    <h2 class="tc">课程列表</h2>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default" ng-repeat="course in courseList">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a class="collapsed" ng-click="getCourseInfo(course.courseid)" role="button" data-toggle="collapse" href="#collapse{{$index}}"  aria-expanded="false" ng-bind="course.name">
+                        Collapsible Group Item #1
+                    </a>
+                    <i class="glyphicon glyphicon-menu-right pull-right"></i>
+                </h4>
+            </div>
+            <div id="collapse{{$index}}" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body ">
+                    <h3>课程详情</h3>
+                    <span>视频链接：{{ info.couseInfo.url }}</span>
+                    <p >课程简介：{{ info.couseInfo.description }}</p>
+
+                    <span>讲师信息：{{ info.tearcherInfo.name }}</span>
+                    <p >讲师简介：{{ info.tearcherInfo.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<% include public.scripts.ejs %>
+<script>
+    var courseListApp=angular.module('courseListApp' ,[]);
+
+    courseListApp.controller('courseListCtrl', function($scope,$http){
+
+        initCourseList(null);
+
+        $scope.getCourseInfo = function(courseid){
+            getCourseInfo({courseid:courseid});
+        }
+
+        function initCourseList(params){
+            $http({
+                method : 'GET',
+                url : "/course/list",  //请求地址
+                params :params
+            }).success( function(response) {
+              $scope.courseList = response.result.list;
+            });
+
+        }
+
+        function getCourseInfo(params){
+            $http({
+                method : 'GET',
+                url : "/course/info",  //请求地址
+                params :params
+            }).success( function(response) {
+                $scope.info = response.result;
+            });
+        }
+    });
+
+
+
+</script>
+</html>

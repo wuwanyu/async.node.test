@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/controller/courseController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/controller/userController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/combined-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/cookiejar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/core-util-is" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/delayed-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/extend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/form-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/formidable" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/isarray" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/readable-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/superagent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/scripts/lib/angular.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/scripts/lib/bootstrap.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/scripts/lib/bootstrap.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/scripts/lib/jquery.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/styles/base.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/styles/fonts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/styles/lib/bootstrap-theme.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/styles/lib/bootstrap-theme.css.map" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/styles/lib/bootstrap-theme.min.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/styles/lib/bootstrap.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/styles/lib/bootstrap.css.map" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/styles/lib/bootstrap.min.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/course.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/users.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils/util.js" charset="UTF-8" />
+  </component>
+</project>
